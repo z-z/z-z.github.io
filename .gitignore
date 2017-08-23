@@ -1,0 +1,11 @@
+node_modules/
+e2e/
+*.conf.js
+/*.json
+*.lock
+*.log
+*.txt
+dist/
+src/
+copy_build
+favicon.ico
