@@ -1,0 +1,849 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Гармония Веса</title>
+  <meta name="description" content="" />
+  
+  <link rel="shortcut icon" href="./favicon.ico" />
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+  
+  
+  <link rel="stylesheet" type="text/css" href="./css/reset.css">
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+  
+  
+  <script src="./js/prefixfree.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="./js/style.js"></script>
+  <script src="/static/js/lp.js"></script>
+  
+  
+<link rel="stylesheet" href="./css/nouislider.fox.css" />
+<script src="./js/jquery.nouislider.min.js"></script>
+<script>
+$(document).ready(function() {
+$('label[for="sex"]').click(function(){
+ if(!$('#sex').prop('checked')){
+  $('label[for="thin"] img').attr('src', './img/thin-male.png')
+  $('label[for="normal"] img').attr('src', './img/normal-male.png')
+  $('label[for="thick"] img').attr('src', './img/thick-male.png')
+ } else {
+  $('label[for="thin"] img').attr('src', './img/thin.png')
+  $('label[for="normal"] img').attr('src', './img/normal.png')
+  $('label[for="thick"] img').attr('src', './img/thick.png')
+ }
+});
+});
+</script>
+
+</head>
+<body>
+
+
+
+
+
+<div class="popup">
+	<div class="popup-shadow"></div>
+	<div class="popup-content">
+		<div class="callback" style="display: none;">
+			<form method="POST" action="">
+				<input type='hidden' name='csrfmiddlewaretoken' value='nsgNjmuV4tuHMELjGWQhkbX0j0EIdQLb' />
+				
+				<input id="id_last_name" name="last_name" type="hidden" />
+				
+				<input id="id_form_name" name="form_name" type="hidden" />
+				
+				<h1>ЗАКАЗАТЬ ЗВОНОК</h1>
+				<p>
+					Заполните форму и мы вам обязательно перезвоним
+				</p>
+				<div class="clearfix"></div>
+				<div class="icon name">
+					<input id="id_name" maxlength="200" name="name" type="text" data-placeholder="ваше имя"/>
+				</div>
+				<div class="icon phone">
+					<input id="id_phone" maxlength="20" name="phone" type="text" data-placeholder="ваш телефон"/>
+				</div>
+				<div class="clearfix"></div>
+				<input type="submit" value="ОСТАВИТЬ ЗАЯВКУ" />
+			</form>
+		</div>
+
+		<div class="ves" style="display: none;">
+			<form method="POST" action="">
+				<input type='hidden' name='csrfmiddlewaretoken' value='nsgNjmuV4tuHMELjGWQhkbX0j0EIdQLb' />
+				
+				<input id="id_last_name" name="last_name" type="hidden" />
+				
+				<input id="id_form_name" name="form_name" type="hidden" />
+				
+				<h1>ВАШ ИДЕАЛЬНЫЙ ВЕС</h1>
+				<p>
+					Заполните форму и мы вам обязательно перезвоним
+				</p>
+
+				<p class="number">
+					77 кг
+				</p>
+
+				<p>
+					Вам необходимо <span class='delta'>7</span> кг
+				</p>
+				<input type="button" value="как это сделать ЗА 14 дней?" />
+			</form>
+		</div>
+
+		<div class="question" style="display:none">
+			<form action="" method="POST">
+				<input type='hidden' name='csrfmiddlewaretoken' value='nsgNjmuV4tuHMELjGWQhkbX0j0EIdQLb' />
+				
+				<input id="id_last_name" name="last_name" type="hidden" />
+				
+				<input id="id_form_name" name="form_name" type="hidden" />
+				
+				<h1>ЗАДАТЬ ВОПРОС</h1>
+				<p>
+					Заполните форму и мы обязательно свяжемся с вами
+				</p>
+				<div style="display: inline-block;">
+					<div class="icon name">
+						<input id="id_name" maxlength="200" name="name" type="text" data-placeholder="ваше имя"/>
+					</div>
+					<br>
+					<div class="icon mail">
+						<input id="id_email" maxlength="200" name="email" type="text" data-placeholder="ваш e-mail"/>
+					</div>
+					<br>
+					<div class="icon phone">
+						<input id="id_phone" maxlength="20" name="phone" type="text" data-placeholder="ваш телефон"/>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+
+				<div style="background: #f5f3ef; border-radius: 10px; display: inline-block; height: 142px; margin: 6px 0px 0px 18px; vertical-align: top; width: 355px;">
+					<textarea name="" cols="30" rows="8" data-placeholder='ваш вопрос'></textarea>
+				</div>
+				<div>
+					<input type="submit" value="задать вопрос">
+				</div>
+			</form>
+		</div>
+
+		<div class="call-back-calc" style="display: none;">
+			<form method="POST" action="">
+				<input type='hidden' name='csrfmiddlewaretoken' value='nsgNjmuV4tuHMELjGWQhkbX0j0EIdQLb' />
+				
+				<input id="id_last_name" name="last_name" type="hidden" />
+				
+				<input id="id_form_name" name="form_name" type="hidden" />
+				
+				<h1>ОСТАВЬТЕ ЗАЯВКУ</h1>
+				<p>
+					И мы поможем Вам добиться идеального веса <span>за 2 недели!</span>
+				</p>
+				<div class="clearfix"></div>
+				<div class="icon name">
+					<input id="id_name" maxlength="200" name="name" type="text" data-placeholder="ваше имя"/>
+				</div>
+				<div class="icon phone">
+					<input id="id_phone" maxlength="20" name="phone" type="text" data-placeholder="ваш телефон"/>
+				</div>
+				<div class="clearfix"></div>
+				<input type="submit" value="ОСТАВИТЬ ЗАЯВКУ" />
+			</form>
+		</div>
+	</div>
+</div>
+
+<header>
+	<div class="wrap">
+		<div class="logo"></div>
+		<div class="call">
+			<div class="number">
+				+7 (391)<span> 258-12-47</span>
+			</div>
+			<a href="#">Заказать обратный звонок</a>
+		</div>
+		<div class="clearfix"></div>
+		<h1>Снижение веса<span> в санатории
+			<br>
+			MEDICAL PARK Загорье </span>за 14 дней</h1>
+		<h3>Индивидуальные программы
+		<br>
+		<span>уменьшения и контроля веса</span></h3>
+	</div>
+</header>
+
+<div class="call-block">
+	<div class="wrap">
+		<div class="form-wrap">
+
+			<div style="background: #e5e5e5;">
+				<h2>Оставьте заявку на <span>разработку персональной
+					<br>
+					программы похудения</span></h2>
+				<p>
+					Наш менеджер перезвонит вам в ближайшее время.
+				</p>
+			</div>
+
+			<div style="background: #efefef">
+				<form action="" method="POST">
+					<input type='hidden' name='csrfmiddlewaretoken' value='nsgNjmuV4tuHMELjGWQhkbX0j0EIdQLb' />
+					
+					<input id="id_last_name" name="last_name" type="hidden" />
+					
+					<input id="id_form_name" name="form_name" type="hidden" />
+					
+					<div class="icon name">
+						<input id="id_name" maxlength="200" name="name" type="text" data-placeholder="ваше имя"/>
+					</div>
+					<div class="icon mail">
+						<input id="id_email" maxlength="200" name="email" type="text" data-placeholder="ваш e-mail"/>
+					</div>
+					<div class="icon phone">
+						<input id="id_phone" maxlength="20" name="phone" type="text" data-placeholder="ваш телефон"/>
+					</div>
+					<input type="submit" value="ОСТАВИТЬ ЗАЯВКУ">
+				</form>
+			</div>
+		</div>
+
+		<div class="timer">
+			<div class="text">
+				Персональная программа
+				<br>
+				похудения для Вас бесплатно
+			</div>
+			<div class="container">
+				<div class="flip day1Play"></div><div class="flip dayPlay"></div>
+				<div class="flip hour2Play"></div><div class="flip hourPlay"></div>
+				<div class="flip minute6Play"></div><div class="flip minutePlay"></div>
+				<div class="flip second6Play"></div><div class="flip secondPlay"></div>
+			</div>
+		</div>
+
+		<img src="./img/call-block1.png" alt="" />
+	</div>
+</div>
+
+<div class="c1">
+	<div class="wrap">
+		<h1>С какими проблемами к нам приходят клиенты?</h1>
+		<img src="./img/problems.png" alt="" />
+	</div>
+</div>
+
+<div class="c2">
+	<div class="wrap">
+		<h1>КАК ИЗБАВИТЬСЯ ОТ ЛИШнего веСА?</h1>
+		<h3>Специалисты Красноярской клиники «Medical Park»
+		<br>
+		знают об этом все</h3>
+	</div>
+</div>
+
+<div class="c3">
+	<div class="wrap">
+		<h1>Какой Ваш идеальный вес?</h1>
+
+		<table>
+			<tr>
+				<td>
+				<p>
+					Ваш пол:
+				</p></td>
+				<td>
+				<input type="checkbox" name="" id="sex" />
+				<label for="sex"> <span class="female active">Женский</span><span>Мужской</span> </label></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>
+				<p>
+					Ваш возраст:
+				</p></td>
+				<td><div class="age noUiSlider"></div></td>
+				<td>
+				<input type="text" name="" id="age" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p>
+					Ваш рост
+				</p></td>
+				<td><div class="height noUiSlider"></div></td>
+				<td>
+				<input type="text" name="" id="height" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<p>
+					Ваш вес:
+				</p></td>
+				<td><div class="weight noUiSlider"></div></td>
+				<td>
+				<input type="text" name="" id="weight" />
+				</td>
+			</tr>
+		</table>
+		<p style="float: left; margin-left: 100px;">
+			Ваше телосложение:
+		</p>
+		<input type="radio" name="figure" id="thin" />
+		<label for="thin">
+			<div><img src="./img/thin.png" alt="" />
+			</div>
+			<p>
+				Тонкокостное
+			</p> </label>
+		<input type="radio" name="figure" id="normal" checked="checked" />
+		<label for="normal">
+			<div>
+				<img src="./img/normal.png" alt="" />
+			</div>
+			<p>
+				Нормальное
+			</p> </label>
+		<input type="radio" name="figure" id="thick" />
+		<label for="thick">
+			<div>
+				<img src="./img/thick.png" alt="" />
+			</div>
+			<p>
+				Ширококостное
+			</p> </label>
+		<div class="clearfix"></div>
+		<input type="button" id='ves' value="Рассчитать идеальный вес" />
+	</div>
+</div>
+
+<div class="c4">
+	<div class="wrap">
+		<h1>Программа <span>«КОРЕКЦИЯ фигурЫ»</span></h1>
+		<h2>Как мы работаем</h2>
+		<div class="block">
+			<img src="./img/c4-1.png" alt="" />
+			<h3>Диагностика</h3>
+			<p>
+				Специалисты Красноярской клиники
+				<br>
+				«Medical Park» проведут диагностику
+				<br>
+				Вашего организма и установят <strong>причины
+				<br>
+				излишнего веса</strong>.
+			</p>
+			<p>
+				Наш высококвалифицированный
+				<br>
+				медицинский персонал оценит Ваше
+				<br>
+				физическое состояние, возьмет анализы
+				<br>
+				крови, мочи, общего холестерина, УЗИ
+				<br>
+				брюшной полости и ЭКГ, осмотр
+				<br>
+				генеколога для женщин.
+			</p>
+			<p>
+				<strong>Для Вас будет составлена
+				<br>
+				индивидуальная.</strong>
+			</p>
+		</div>
+		<div class="block">
+			<img src="./img/c4-2.png" alt="" />
+			<h3>Лечение</h3>
+			<p>
+				Вам будут предложены на выбор 3
+				<br>
+				программы похудения: <strong>Лечебное
+				<br>
+				голодание, «1000 калорий в день»</strong> или
+				<br>
+				<strong>«Японская диета»</strong>.
+			</p>
+			<p>
+				В санатории Вы будете питаться по
+				<br>
+				одной из выбранных программ, с учетом
+				<br>
+				индивидуальных особенностей
+				<br>
+				организмов.
+			</p>
+			<p>
+				Вам будет прописан курс процедур,
+				<br>
+				который включает в себя:
+				<br>
+				антицеллюлитный массаж,
+				<br>
+				прессотерапия, стоунтерапия,
+				<br>
+				spa-капсула, приемы фиточаев,
+				<br>
+				тренажерный зал, бассейн,
+				<br>
+				озонотерапия, терренкур, прием
+				<br>
+				минеральной воды, лекции по
+				<br>
+				здоровому питанию
+			</p>
+		</div>
+		<div class="block">
+			<img src="./img/c4-3.png" alt="" />
+			<h3>поддержка</h3>
+			<p>
+				После прохождения курса похудения вы
+				<br>
+				в любой момент можете получить
+				<br>
+				консультацию и поддержку наших
+				<br>
+				специалистов в Красноярской клинике
+				<br>
+				«Medical Park».
+			</p>
+			<p>
+				Наши врачи подскажут <strong>как
+				<br>
+				поддерживать себя в форме,
+				<br>
+				придерживаться здорового питания</strong> и
+				<br>
+				окажут психологическую помощь.
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="c5">
+	<h1><span>ОСТАЛИСЬ</span> ВОПРОСЫ?</h1>
+	<a class='quest' href="#">задайте их менеджеру</a>
+</div>
+
+<div class="call-block">
+	<div class="wrap">
+		<div class="form-wrap">
+			<div style="background: #e5e5e5;">
+				<h2>Оставьте заявку на <span>разработку персональной
+					<br>
+					программы похудения</span></h2>
+				<p>
+					Наш менеджер перезвонит вам в ближайшее время.
+				</p>
+			</div>
+
+			<div style="background: #efefef">
+				<form action="" method="POST">
+					<input type='hidden' name='csrfmiddlewaretoken' value='nsgNjmuV4tuHMELjGWQhkbX0j0EIdQLb' />
+					
+					<input id="id_last_name" name="last_name" type="hidden" />
+					
+					<input id="id_form_name" name="form_name" type="hidden" />
+					
+					<div class="icon name">
+						<input id="id_name" maxlength="200" name="name" type="text" data-placeholder="ваше имя"/>
+					</div>
+					<div class="icon mail">
+						<input id="id_email" maxlength="200" name="email" type="text" data-placeholder="ваш e-mail"/>
+					</div>
+					<div class="icon phone">
+						<input id="id_phone" maxlength="20" name="phone" type="text" data-placeholder="ваш телефон"/>
+					</div>
+					<input type="submit" value="ОСТАВИТЬ ЗАЯВКУ">
+				</form>
+			</div>
+		</div>
+
+		<div class="timer">
+			<div class="text">
+				Персональная программа
+				<br>
+				похудения для Вас бесплатно
+			</div>
+			<div class="container">
+				<div class="flip day1Play"></div><div class="flip dayPlay"></div>
+				<div class="flip hour2Play"></div><div class="flip hourPlay"></div>
+				<div class="flip minute6Play"></div><div class="flip minutePlay"></div>
+				<div class="flip second6Play"></div><div class="flip secondPlay"></div>
+			</div>
+		</div>
+
+		<img src="./img/call-block2.png" alt="" />
+	</div>
+</div>
+
+<div class="c6">
+	<h1>Красота, стройность, уверенность в себе
+	<br>
+	<span>или почему Вы должны выбрать именно нас?</span></h1>
+
+	<div class="wrap">
+		<div>
+			<div class="block">
+				<span>Индивидуальная программа похудения </span>специально для Вас
+			</div>
+			<div class="block">
+				Гарантия успешности похудения - <span>снижение веса на 5-10%</span> от общей массы
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div>
+			<div class="block">
+				<span>Высококвалифицированный и ответственный </span>медицинский персонал
+			</div>
+			<div class="block">
+				<span>Новейшие технологии </span>и комфортные условия проживания
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div>
+			<div class="block">
+				<span>Лучшие достижения современной медицины </span>в области снижения веса и многолетний опыт наших специалистов
+			</div>
+			<div class="block">
+				<span>Развитая инфраструктура, </span>современный медецинский корпус с новейшим оборудованием. Гостиничные номера <span>повышенной комфортности</span>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div>
+			<div class="block">
+				Закрытый и открытый <span>бассейны, тренажерный зал, школа танцев, кинозал, </span>экскурсионные и развлекательные программы
+			</div>
+			<div class="block">
+				<span>Атмосфера уюта, доброжелательности, внимание и забота о физическом и психологическом комфорте </span>гостей
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div>
+			<div class="block">
+				Возможность пройти первый этап обследования в красноярской клинике Medical Park
+			</div>
+			<div class="block">
+				Специальные программы лояльности: скидки, дисконтная программа, специальные предложения
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div>
+			<div class="block">
+				Назначение индивидуального курса лечебных процедур, план питания, движения и отдыха для обеспечения максимального результата похудения
+			</div>
+			<div class="block">
+				Поддержка после окончания курса похудения, бесплатные консультации врача по телефону или e-mail
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div>
+			<div class="block">
+				Уникальное сочетание лечебных процедур, оздоровительных и косметологических программ, физических нагрузок
+			</div>
+			<div class="block">
+				Уникальное сочетание лечебных процедур, оздоровительных и косметологических программ, физических нагрузок
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<div class="bottom">
+		<h1><strong>Вы</strong> в крАтчайшие сроки
+		<br>
+		избавитесь от лишнего веса.
+		<br>
+		<span>Результат - <strong>потеря до 15%</strong> массы тела!</span></h1>
+	</div>
+</div>
+
+<div class="c7">
+	<h1>Каким будет ваш день  в санатории «загорье»</h1>
+	<img src="./img/c7text.png" alt="" />
+</div>
+
+<div class="c8">
+	<h1>Гарантия результата после <span>14 дневного</span> курса</h1>
+	<h3>Гарантированный результат!</h3>
+	<div class="wrap">
+		<div class="block">
+			<img src="./img/c8i1.png" alt="" />
+			<p>
+				<span>Снижение веса у 90%
+					<br>
+					пациентов от 5 до 10 кг</span>
+			</p>
+		</div>
+		<div class="block">
+			<img src="./img/c8i2.png" alt="" />
+			<p>
+				Первые результаты уже на
+				<br>
+				второй день лечения
+			</p>
+		</div>
+		<div class="block">
+			<img src="./img/c8i3.png" alt="" />
+			<p>
+				<span>Уменьшение окружности
+					<br>
+					живота у 100%
+					<br>
+					пациентов на 6-15 см</span>
+			</p>
+		</div>
+		<div class="block">
+			<img src="./img/c8i4.png" alt="" />
+			<p>
+				У 20% пациентов <span>уменьшение
+					<br>
+					уровня холестерина на 60%</span>
+			</p>
+		</div>
+		<div class="block">
+			<img src="./img/c8i5.png" alt="" />
+			<p>
+				Вы <span>улучшите контуры тела и
+					<br>
+					состояние кожи, повысите
+					<br>
+					общий тонус, самооценку и
+					<br>
+					настроение</span>
+			</p>
+		</div>
+		<div class="block">
+			<img src="./img/c8i6.png" alt="" />
+			<p>
+				Вы измените свой образ
+				<br>
+				жизни к лучшему
+				<br>
+				и сумеете навсегда <span>сохранить
+					<br>
+					результат</span>
+			</p>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+
+<div class="c9">
+	<div class="wrap">
+		<h1>Отзывы наших клиентов</h1>
+		<div class="comment">
+			<img src="./img/comment1.png" alt="" />
+			<div>
+				<h3>Валерия Маркова, 34 года</h3>
+				<div class="info">
+					<p>
+						Начальный вес: <span>86 кг</span>
+					</p>
+					<p>
+						После 14 дневного курса: <span>71 кг</span>
+					</p>
+					<p>
+						Результат: <span>минус 11 кг</span>
+					</p>
+				</div>
+				<div class="text">
+					После развода у меня была ужасная депрессия. Тоску и одиночество заедала огромным
+					количеством еды. Запихивала в себя всё - торты, пирожные, фаст-фуд. Очень быстро вещи
+					стали малы. Подруга, увидев меня, испугалась: "Что с тобой? Выглядишь ужасно". Я
+					поправилась на 20 кг. С трудом сейчас представляю что я весила 86 килограмм! Подруга
+					уговорила поучаствовать с ней в программе похудения. За 2 недели в санатории Загорье <strong>я
+					не только скинула 15 лишних килограмм, но и избавилась от неуверенности в себе,
+					закомплексованности.</strong> Вернулась совершенно другим человеком, теперь чувствую себя
+					настоящей женщиной! Я приобрела знания по здоровому питанию и теперь собираюсь
+					продолжать совершенствоваться. В планах сбросить еще 5-7 кг. Всем удачи!
+				</div>
+			</div>
+		</div>
+
+		<div class="comment">
+			<img src="./img/comment2.png" alt="" />
+			<div>
+				<h3>Константин Зыкин, 42 года</h3>
+				<div class="info">
+					<p>
+						Начальный вес: <span>117 кг</span>
+					</p>
+					<p>
+						После 14 дневного курса: <span>99 кг</span>
+					</p>
+					<p>
+						Результат: <span>минус 18 кг</span>
+					</p>
+				</div>
+				<div class="text">
+					Решил обратиться за помощью в похудении в профессиональную клинику. Очень переживал, что со мной не станут работать индивидуально, запишут в огромную группу и в итоге я не получу никакого результата. Специалисты Medical Park подошли серьезно к моим анализам, составили индивидуальную программу похудения специально для меня. Результат превзошли мои ожидания! <strong>Я улучшил форму благодаря занятиям на тренажерах, благодаря сбалансированному питанию сбросил 11 кг!</strong> Очень рад, что к моей проблеме подошли индивидуально. И, знаете, говорят, что хорошего человека должно быть много... все это ерунда. Хороший человек должен быть здоровым и красивым, чувствовать себя свободно и уверенно! Спасибо Загорью за поддержку и помощь в осуществлении желания похудеть!
+				</div>
+			</div>
+		</div>
+
+		<div class="comment">
+			<img src="./img/comment3.png" alt="" />
+			<div>
+				<h3>Галина Ушакова, 39 лет</h3>
+				<div class="info">
+					<p>
+						Начальный вес: <span>97 кг</span>
+					</p>
+					<p>
+						После 14 дневного курса: <span>82 кг</span>
+					</p>
+					<p>
+						Результат: <span>минус 15 кг</span>
+					</p>
+				</div>
+				<div class="text">
+					Весь процесс похудения напоминал какой-то интересный квест, по прохождении которого я стала здоровее, красивее и получила фигуру, о которой давно мечтала. Атмосфера в санатории настраивает на успех: все худеют, добиваются результатов, радуются собственным маленьким победам.
+					Оттуда просто не хотелось уезжать! Собираюсь приехать еще раз, улучшить результаты!
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="call-block">
+	<div class="wrap">
+		<div class="form-wrap">
+			<div style="background: #e5e5e5;">
+				<h2>Оставьте заявку на <span>разработку персональной
+					<br>
+					программы похудения</span></h2>
+				<p>
+					Наш менеджер перезвонит вам в ближайшее время.
+				</p>
+			</div>
+
+			<div style="background: #efefef">
+				<form action="" method="POST">
+					<input type='hidden' name='csrfmiddlewaretoken' value='nsgNjmuV4tuHMELjGWQhkbX0j0EIdQLb' />
+					
+					<input id="id_last_name" name="last_name" type="hidden" />
+					
+					<input id="id_form_name" name="form_name" type="hidden" />
+					
+					<div class="icon name">
+						<input id="id_name" maxlength="200" name="name" type="text" data-placeholder="ваше имя"/>
+					</div>
+					<div class="icon mail">
+						<input id="id_email" maxlength="200" name="email" type="text" data-placeholder="ваш e-mail"/>
+					</div>
+					<div class="icon phone">
+						<input id="id_phone" maxlength="20" name="phone" type="text" data-placeholder="ваш телефон"/>
+					</div>
+					<input type="submit" value="ОСТАВИТЬ ЗАЯВКУ">
+				</form>
+			</div>
+		</div>
+
+		<div class="timer">
+			<div class="text">
+				Персональная программа
+				<br>
+				похудения для Вас бесплатно
+			</div>
+			<div class="container">
+				<div class="flip day1Play"></div><div class="flip dayPlay"></div>
+				<div class="flip hour2Play"></div><div class="flip hourPlay"></div>
+				<div class="flip minute6Play"></div><div class="flip minutePlay"></div>
+				<div class="flip second6Play"></div><div class="flip secondPlay"></div>
+			</div>
+		</div>
+
+		<img src="./img/call-block3.png" alt="" />
+	</div>
+</div>
+
+<div class="c10">
+	<div class="wrap">
+		<div class="text">
+			<p>
+				660028 г.Красноярск
+			</p>
+			<p>
+				Телевизорная 1, строение 5
+			</p>
+			<p>
+				тел: +7 (391) 258-12-47, +7 (391) 258-10-10
+			</p>
+			<p>
+				ООО "Медикал Парк"
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="c5">
+	<h1><span>ОСТАЛИСЬ</span> ВОПРОСЫ?</h1>
+	<a class='quest' href="#">задайте их менеджеру</a>
+</div>
+
+<footer>
+	<div class="wrap">
+		<div class="call">
+			<div class="number">
+				+7 (391) 258-12-47
+			</div>
+			<div class="number">
+				+7 (391) 258-10-10
+			</div>
+			<a href="#">заказать звонок</a>
+		</div>
+
+		<div class="vendor">
+			<span>РАЗРАБОТКА САЙТА:</span>
+			<img src="./img/mokselle.png"/>
+		</div>
+		<div class="clearfix"></div>
+		<p>
+			Все результаты уменьшения массы и объемов тела, указанные в разделах "Отзывы наших клиентов", "Гарантированный результат" и "Красота, стройность, уверенность в себе или
+			<br>
+			почему вы должны выбрать именно нас" - сугубо индивидуальны и зависят от физиологических параметров человека и точности соблюдения рекомендаций врача.
+			<br>
+			Перед прохождением программы обязательно прохождение диагностики: общий анализ мочи, общий анализ крови, сахарная кривая, УЗИ брюшной полости, ЭКГ.
+			<br><br>
+			ООО "Медикал Парк", ОГРН 1092468037221, ИНН 2463215166
+		</p>
+	</div>
+</footer>
+
+
+	<script>
+(function (d, w, c) {
+(w[c] = w[c] || []).push(function() {
+try {
+w.yaCounter22131995 = new Ya.Metrika({id:22131995,
+clickmap:true,
+trackLinks:true,
+accurateTrackBounce:true});
+} catch(e) { }
+});
+
+var n = d.getElementsByTagName("script")[0],
+s = d.createElement("script"),
+f = function () { n[removed].insertBefore(s, n); };
+s.type = "text/javascript";
+s.async = true;
+s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "mc.yandex.ru/metrika/watch.js";
+
+if (w.opera == "[object Opera]") {
+d.addEventListener("DOMContentLoaded", f, false);
+} else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="mc.yandex.ru/watch/22131995" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+
+</body>
+</html>

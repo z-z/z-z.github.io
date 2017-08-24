@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'PFDinDisplayProBold';
+    src: url('pfdindisplaypro-bold.eot');
+    src: url('pfdindisplaypro-bold.eot') format('embedded-opentype'),
+         url('pfdindisplaypro-bold.woff') format('woff'),
+         url('pfdindisplaypro-bold.ttf') format('truetype'),
+         url('pfdindisplaypro-bold.svg#PFDinDisplayProBold') format('svg');
+}

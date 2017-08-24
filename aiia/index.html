@@ -1,0 +1,725 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aiia</title>
+  <meta name="description" content="" />
+  
+  <link rel="shortcut icon" href="./favicon.ico" />
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+  
+  
+  <link rel="stylesheet" type="text/css" href="./css/reset.css">
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+  <style>
+  	.form-success, .form-error {position: fixed; top: 0; left: 0; height: 36px; line-height: 36px; color: white; background-color: #3e8c04; font-size: 1.5em; vertical-align: middle; text-align: center; padding: 12px; z-index: 200;}
+	.form-error {background-color: #b40101;}
+	.form-success .wrap , .form-error .wrap {padding: 0;}
+  </style>
+  
+  
+  <script src="./js/prefixfree.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="./js/style.js"></script>
+  <script src="/welcome/static/js/lp.js"></script>
+  
+  
+  
+</head>
+<body>
+
+
+
+
+
+	<div class="popup">
+		<div class="popup-shadow"> </div>
+		<div class="popup-content">
+			<div class="callback" style="display: none;">
+				<form action="" method="POST">
+					<input type='hidden' name='csrfmiddlewaretoken' value='Na51hWExBLn3nU9sqZVZzpsbjVkhO7rg' />
+					
+					<input id="id_last_name" name="last_name" type="hidden" />
+					
+					<input id="id_form_name" name="form_name" type="hidden" />
+					
+					<h1>Request a phone call</h1>
+					<div class="clearfix"></div>
+					<div class="icon name">
+						<input id="id_name" maxlength="200" name="name" type="text" data-placeholder="name"/>
+					</div>
+					<div class="icon phone">
+						<input id="id_phone" maxlength="20" name="phone" type="text" data-placeholder="phone"/>
+					</div>
+					<div class="clearfix"></div>
+					<input type="submit" value="submit" />
+				</form>
+			</div>
+			
+			<div class="question" style="display:none">
+				<form action="" method="POST">
+					<input type='hidden' name='csrfmiddlewaretoken' value='Na51hWExBLn3nU9sqZVZzpsbjVkhO7rg' />
+					
+					<input id="id_last_name" name="last_name" type="hidden" />
+					
+					<input id="id_form_name" name="form_name" type="hidden" />
+					
+					<h1>Ask a question</h1>
+					<p>Complete the form and we'll definitely get back to you</p>
+					<div style="display: inline-block; margin-top: 20px;">
+						<div class="icon name">
+							<input id="id_name" maxlength="200" name="name" type="text" data-placeholder="name"/>
+						</div><br>
+						<div class="icon phone">
+							<input id="id_phone" maxlength="20" name="phone" type="text" data-placeholder="phone"/>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					
+					<div style="background: #fff; box-shadow:inset 0px 0px 5px rgba(0,0,0,0.5); border-radius: 10px; display: inline-block; height: 80px; margin: 26px 0px 0px 18px; vertical-align: top; width: 355px;">
+						<textarea name="" cols="30" rows="8" data-placeholder='your question'></textarea>
+					</div>
+					<div><input type="submit" value="submit"></div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<div class="logo">
+		<div class="wrap">
+			<img src="./img/logo.png" alt="" />
+			<div class="call">
+				<h1>+38 044 580 88 00</h1>
+				<a href="">Request a phone call</a>
+			</div>
+		</div>
+	</div>
+	<header>
+		<div class="wrap">
+			<h1>Gifts<br>to spread<br><span>your brand<br>values</span></h1>
+			<p>exclusive design<br>gift production and branding</p>
+		</div>
+	</header>
+	
+	<div class="clients">
+		<h1>Our clients:</h1>
+		<img src="./img/clients.png" alt="" />
+	</div>
+	
+	<div class="c1 scroll-animate">
+		<div class="wrap">
+			<div class="block">
+				<div class="circle">
+					<h3><em>86</em><span>%</span></h3>
+					<div class="cir2 b1 p1_86"></div>
+					<div class="cir2 b2 p2_86"></div>
+				</div>
+				<p>of marketing specialists<br>called promotional products<br>the most effective way<br>of advertising</p>
+			</div>
+			
+			
+			<div class="block">
+				<div class="circle">
+					<h3><em>67</em><span>%</span></h3>
+					<div class="cir2 b1 p1_67"></div>
+					<div class="cir2 b2 p2_67"></div>
+				</div>
+				<p>of customers keep<br>branded gifts for<br>longer than a year</p>
+			</div>
+			
+			
+			<div class="block">
+				<div class="circle">
+					<h3><em>78</em><span>%</span></h3>
+					<div class="cir2 b1 p1_78"></div>
+					<div class="cir2 b2 p2_78"></div>
+				</div>
+				<p>of customers become more<br>loyal to the brand after<br>receiving a gift</p>
+			</div>
+			
+			
+			<div class="block">
+				<div class="circle">
+					<h3><em>43</em><span>%</span></h3>
+					<div class="cir2 b1 p1_43"></div>
+					<div class="cir2 b2 p2_43"></div>
+				</div>
+				<p>of consumers<br>choose the brand<br>of the promotional<br>gift they received</p>
+			</div>
+			
+			
+			<div class="block">
+				<div class="circle">
+					<h3><em>70</em><span>%</span></h3>
+					<div class="cir2 b1 p1_70"></div>
+					<div class="cir2 b2 p2_70"></div>
+				</div>
+				<p>of customers use<br>promotional products<br>in the everyday life</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="c2">
+		<div class="green"></div>
+		<div class="light"></div>
+		<div class="wrap">
+			<h1><span>Why</span><Br>do you<br>need to give<br>corporate<br>gifts?</h1>
+				<p>Corporate gifts open the way<br>to <a href="#">word-of-mouth marketing</a>, leading to:</p>
+				<div class="way">
+					<div class="block">
+						<img src="./img/way1.png" alt="" />
+						<h3>Increase<br>in customer<br>loyalty</h3>
+					</div>
+					<div class="block">
+						<img src="./img/way2.png" alt="" />
+						<h3>Positive<br>brand image</h3>
+						<p>through the value<br>and emotions<br>generated by the gifts</p>
+					</div>
+					<div class="block">
+						<img src="./img/way3.png" alt="" />
+						<h3>Constant<br>consumer<br>contact with<br>your brand</h3>
+					</div>
+					<div class="block">
+						<img src="./img/way4.png" alt="" />
+						<h3>Viral effect –</h3>
+						<p>people enjoy interesting<br>products and discuss<br>them with friends </p>
+					</div>
+					<div class="block" style="border-color: transparent;">
+						<img src="./img/way5.png" style="margin-left: -15px;" alt="" />
+						<h3>Extra contact<br>with strategic<br>partners</h3>
+					</div>
+				</div>
+			<div class="border-eff"></div>
+		</div>
+	</div>
+	
+	<div class="c3out">
+		<div  class="wrap">
+			<h1 class="num">[3]</h1><!--
+			--><h1 class="top">crucial mistakes in launching<br><span>word-of-mouth marketing</span></h1>
+		</div>
+	</div>
+	
+	<div class="c3 parallax">
+		<div class="wrap">
+			<div class="cont">
+				<div class="block">
+					<h3>Boring<br>promotional products</h3>
+					<div style="position: absolute; top: 180px;"><p>Don’t waste your money<br>on uninspired gifts.</p>
+					<p>You should launch only promotional<br>items that will stimulate discussion.</p></div>
+					<div class="number">1</div>
+				</div><!--
+				--><div class="block" style="margin: 23px 10px;">
+					<h3>Unoriginal<br>offers</h3>
+					<div style="position: absolute; top: 180px;"><p>Advertising similar to your<br>competitor's ad - it's your<br>competitor's ads.</p>
+					<p>Your clients will throw them away<br>and forget about them quickly.<br>This will only hurt your brand image.</p></div>
+					<div class="number">2</div>
+				</div><!--
+				--><div class="block">
+					<h3>Ignoring<br>the interests<br>of your target audience</h3>
+					<div style="position: absolute; top: 180px;"><p>Client gifts should meet the<br>interests of the target audience;<br>you should consider the age, sex,<br>occupation and interests of your customers.</p></div>
+					<div class="number">3</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="c4">
+		<h1>How to make people talk <span>about your brand</span></h1>
+		<div class="wrap">
+			<div class="block">
+				<div class="num">1</div>
+				<h3>Be useful</h3>
+				<p>Make a valuable company<br>gift for your potential<br>clients</p>
+			</div><!--
+			--><div class="block">
+				<div class="num">2</div>
+				<h3>Make your clients<br>feel special</h3>
+				<p>Give them high-quality<br>executive gifts -  Your<br>gifts should be stylish<br>and represent the good<br>taste of your clients</p>
+			</div><!--
+			--><div class="block">
+				<div class="num">3</div>
+				<h3>Make your customers<br>feel that they are a part<br>of a community</h3>
+				<p>Find important common interests<br>with your clients</p>
+			</div><!--
+			--><div class="block">
+				<div class="num">4</div>
+				<h3>Be unique</h3>
+				<p>Unique corporate gifts<br>and interesting promotional<br>products are an efficient<br>driver of word-of-mouth<br>marketing</p>
+			</div><!--
+			--><div class="block">
+				<div class="num">5</div>
+				<h3>Create art</h3>
+				<p>A corporate gift<br>as a piece of art is a perfect<br>way to leave the imprint<br>of your brand on history</p>
+			</div><!--
+			
+			--><div class="block">
+				<img src="./img/c4.png" alt="" />
+			</div>
+		</div>
+	</div>
+	
+	<div class="c5 parallax">
+		<div class="top">
+			<div class="wrap">
+				<h1 class="num" >[5]</h1><h1 class="text">reasons to work with us</h1>
+			</div>
+		</div>
+		<div class="wrap">
+			<div class="b1 block">
+				<h3>UNEXAMPLED<br>promotional products</h3>
+				<p>Every year we completely renew our product line. we make unique products combining modern design and innovation. </p>
+				<div class="number">1</div>
+			</div>
+			<div class="b3 block">
+				<h3>Personalization<br>of corporate gifts</h3>
+				<p>it’s not about simple branding.<br>WE FILL UP PROMO GIFTS WITH YOUR CORPORATE IDENTITY FEATURES.</p>
+				<div class="number">3</div>
+			</div>
+			<div class="b2 block">
+				<h3>no promo garbage</h3>
+				<p>No useless promo gifts. We only propose marketing products that are interesting for your clients.</p>
+				<div class="number">2</div>
+			</div>
+			<div class="b4 block">
+				<h3>quality of our<br>products is worldwide<br>recognized</h3>
+				<p>Our company has implemented ISO 9001 and 28000 standards which provides high reliability and safety within the supply chain.</p>
+				<div class="number">4</div>
+			</div>
+			<div class="b5">
+				<h3>Free logo placing</h3>
+				<p>We offer various options for placing your logo as well as SPECIAL KINDS OF branding.</p>
+				<div class="number">5</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="c6">
+		<div class="wrap">
+			<h1><strong>4</strong><span class="s1">components of</span><span class="s2">word-to-mouth marketing</span><span class="s3">in 1 product</span></h1>
+		</div>
+		<div class="wrap components scroll-animate">
+			<img class="fon" src="./img/c6.png" alt="" />
+			<div class="b1 block">
+				<h3 class="green">Emotions<br><span>the corporate gift idea should excite,<br>amaze and keep you awake at night</span></h3>
+				<p><span>portable</span> speaker</p>
+				<img src="./img/c6b1.png" alt="" />
+			</div>
+			<div class="b2 block">
+				<h3>Trust<br><span>maintain the image<br>of your company;<br>everything you do<br>should be of high<br>quality</span></h3>
+				<p>usb <span>flash drive</span></p>
+				<img src="./img/c6b2.png" alt="" />
+			</div>
+			<div class="b3 block">
+				<h3>Interest<br><span>if you want people<br>to talk about your<br>brand, you should<br>make an unique<br>marketing item</span></h3>
+				<p>key chain <span>with QR-code</span></p>
+				<img src="./img/c6b3.png" alt="" />
+			</div>
+			<div class="b4 block">
+				<h3 class="green">Simplicity<br><span>to launch discussions find<br>an easy conversation starter </span></h3>
+				<img src="./img/c6b4.png" alt="" />
+			</div>
+		</div>
+	</div>
+	
+	<div class="c7">
+		<h1>Who are our clients</h1>
+		<div class="wrap">
+			<div>
+				<span class="b0"><img src="./img/c7b1.png" alt="" /></span>
+				<span class="b1"><span>Corporations</span></span>
+				<span class="b2">famous brands<br>with marketing<br>budgets</span>
+			</div>
+			<div>
+				<span class="b0"><img src="./img/c7b2.png" alt="" /></span>
+				<span class="b1"><span>Marketing</span><br><span>and advertising</span><br><span>agencies</span></span>
+				<span class="b2">developing<br>marketing<br>campaigns<br>for their<br>clients</span>
+			</div>
+			<div>
+				<span class="b0"><img src="./img/c7b3.png" alt="" /></span>
+				<span class="b1"><span>distributors</span></span>
+				<span class="b2">distributing<br>promotional<br>product</span>
+			</div>
+		</div>
+	</div>
+	
+	<div class="c8">
+		<h1>What we <span>offer</span></h1>
+		<div class="cont scroll-animate">
+			<div class="wrap">
+				<div class="circle">
+					<div class="cir2 b1"><p>SSSSSPEAKER<br><span>SOUNDS GOOD</span></p></div>
+					<img src="./img/c8i1.png" alt="" />
+				</div>
+				<div class="circle">
+					<div class="cir2 b2"><p>CLEVER CLOVER<br><span>MY MY MY</span></p></div>
+					<img src="./img/c8i2.png" alt="" />
+				</div>
+				<div class="circle">
+					<div class="cir2 b3">
+						<p>NO UFOS<br><span>GOOD VIBES</span></p>
+					</div>
+					<img src="./img/c8i3.png" alt="" />
+				</div>
+				<div class="circle">
+					<div class="cir2 b4">
+						<p>MODERNTRONIC<br><span>IF BOND WAS<br>A WOMAN</span></p>
+					</div>
+					<img src="./img/c8i4.png" alt="" />
+				</div>
+				<div class="circle">
+					<div class="cir2 b5">
+						<p>TALISMAN<br><span>EVERY<br>TIME WE SAY<br>«HELLO»</span></p>
+					</div>
+					<img src="./img/c8i5.png" alt="" />
+				</div>
+				<div class="circle">
+					<div class="cir2 b6">
+						<p>NEVER-LOSE<br>USB DRIVE<span>ONE PERFECT<br>THING</span></p>
+					</div>
+					<img src="./img/c8i6.png" alt="" />
+				</div>
+				<div class="circle abs">
+					<div class="cir2 b7">
+						<p>DUALITY<br><span>CHARGE IT ALL</span></p>
+					</div>
+					<img src="./img/c8i6.png" alt="" />
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="c9 parallax">
+		<div class="wrap">
+			<p class="name">ALEX<br><span>consultant aiia</span></p>
+			<img class="man" src="./img/c9man.png" alt="" />
+			<div class="timer">
+				<h3>Mini-course<br><span>«5 Secrets of Effective<br>Promotional Activities»</span></h3>
+				<div class="container">
+					<div class="flip day1Play"></div><div class="flip dayPlay"></div>
+					<div class="flip hour2Play"></div><div class="flip hourPlay"></div>
+					<div class="flip minute6Play"></div><div class="flip minutePlay"></div>
+					<div class="flip second6Play"></div><div class="flip secondPlay"></div>
+				</div>
+			</div>
+			<div class="form-wrap">
+				<img src="./img/form-wrap.png" alt="" />
+				<h1>request</h1>
+				<h3>an estimate on a test order</h3>
+				<p>Our manager will call you back<br>within one hour</p>
+				<form action="" method="POST">
+					<input type='hidden' name='csrfmiddlewaretoken' value='Na51hWExBLn3nU9sqZVZzpsbjVkhO7rg' />
+					
+					<input id="id_last_name" name="last_name" type="hidden" />
+					
+					<input id="id_form_name" name="form_name" type="hidden" />
+					
+					<div class="icon name">
+						<input id="id_name" maxlength="200" name="name" type="text" data-placeholder="name"/>
+					</div>
+					<div class="icon mail">
+						<input id="id_email" maxlength="200" name="email" type="text" data-placeholder="e-mail"/>
+					</div>
+					<div class="icon phone">
+						<input id="id_phone" maxlength="20" name="phone" type="text" data-placeholder="phone"/>
+					</div>
+					<div class="clearfix"></div>
+					<input type="submit" value="Send request" />
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<div class="c10">
+		<div class="green"></div>
+		<div class="wrap">
+			<h1>steps of <span>our work</span></h1>
+			<div class="left">Before offering you our marketing products,<br>we go through detailed preparations:</div>
+			<div class="right">After all preparation processes are finished,<br>we begin working with you:</div>
+			<div class="clearfix"></div>
+			<div class="block">
+				<div class="left">Conduct market research</div>
+				<div class="right">Research the needs and interests<br>of your target audience</div>
+				<div class="num">1</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="block">
+				<div class="left">Formulate design specifications</div>
+				<div class="right">Select the appropriate types<br>of promotional products</div>
+				<div class="num">2</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="block">
+				<div class="left">develop design</div>
+				<div class="right">Personalize promotional items for the specific<br>requirements of your corporate style</div>
+				<div class="num">3</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="block">
+				<div class="left">Adapt for manufacturing requirements<br>and  produce samples</div>
+				<div class="right">Receive sample approval from you</div>
+				<div class="num">4</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="block">
+				<div class="left">Conduct focus group research<br>and analyze the results</div>
+				<div class="right">Manufacture Branded gifts</div>
+				<div class="num">5</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="block">
+				<div class="left">Modify product according to feedback<br>and prepare production process</div>
+				<div class="right">Deliver products to you</div>
+				<div class="num">6</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="block">
+				<div class="left">Manufacture products</div>
+				<div class="right">Collect feedback and create new ideas</div>
+				<div class="num">7</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="c11">
+		<h1>[8] more reasons <span>to work with us</span></h1>
+		<div class="wrap scroll-animate">
+			<p class="b1">Our approach is similar<br><span>to the creation of modern art</span></p>
+			<p class="b2">We pay extra attention to details<br><span>The Devil is in the Details</span></p>
+			<p class="b3">We guaranty simplicity<br><span> of design and functionality<br>of promo products</span></p>
+			<p class="b4">We create Branded gifts<br><span>that bring joy</span></p>
+			<p class="b5">We have 10 years of experience<br><span>and deep understanding of<br>the Branded gifts industry</span></p>
+			<p class="b6">Our promotional products<br><span>become a necessary part of<br>your consumers’ daily life</span></p>
+			<p class="b7">Our products are more<br>than just Branded gifts,<br><span>they are positive emotions</span></p>
+			<p class="b8">The corporate gifts<br>we produce help you achieve<br>your <span>marketing goals</span></p>
+		</div>
+	</div>
+	
+	<div class="c12">
+		<h1>Our <span>clients</span></h1>
+	</div>
+	
+	<div class="c13 scroll-animate">
+		<div class="wrap">
+			<h1>How world<br>brands use<bR>Branded<br>gifts</h1>
+			<div class="block">
+				<h3>98<span>%</span></h3>
+				<p>have SEVERAL goals<br>at once</p>
+			</div>
+			<div class="block">
+				<h3>93<span>%</span></h3>
+				<p>for promotion </p>
+			</div><br>
+			<div class="block">
+				<h3>73<span>%</span></h3>
+				<p>for development<br>of business relationships</p>
+			</div>
+			<div class="block">
+				<h3>51<span>%</span></h3>
+				<p>as way to show<br>gratitude </p>
+			</div>
+			<div class="block">
+				<h3>68<span>%</span></h3>
+				<p>as presents for<br>employees</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="c14">
+		<div class="wrap">
+			<h1>Feedback from <span>our clients</span></h1>
+			<div class="block">
+				<div>
+					<img src="./img/c14i1.png" alt="" />
+					<div class="text"><p class="comment">We have worked with Aiia for many<br>years. They have many cool<br>ideas and non-standard proposals.<br>These guys are very creative.<br>It was great to find such a team!</p>
+					<p class="status">Marketing Director</p>
+					<p class="firm">Allianz</p></div>
+				</div>
+				<div>
+					<img src="./img/c14i2.png" alt="" />
+					<div class="text"><p class="comment">Why Aiia?<br>Because nobody has such solutions!<br>And we have similar philosophies.<br>It’s such a rare thing.</p>
+					<p class="status">Marketing Director</p>
+					<p class="firm">Red Bull</p></div>
+				</div>
+			</div>
+			<div class="block">
+				<div>
+					<img src="./img/c14i3.png" alt="" />
+					<div class="text"><p class="comment">I like working with professionals,<br>who do not just sell, but find<br>perfect solutions for each client.<br>Aiia takes into account the interests<br>of our audience and helps to choose<br>the right option.<br>I’m very glad working with AIIA.</p>
+					<p class="status">Business Development Director</p>
+					<p class="firm">Mary Key</p></div>
+				</div>
+				<div>
+					<img src="./img/c14i4.png" alt="" />
+					<div class="text"><p class="comment">I have worked with many corporate<br>gift producers, but I have never<br>experienced such smooth and<br>efficient work. Each step is thought<br>through, everything is on-time and<br>of high quality.<br>It was really unexpected!</p>
+					<p class="status">Director of Advertising Department</p>
+					<p class="firm">Lactalis</p></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="c9 parallax">
+		<div class="wrap">
+			<img class="man" src="./img/c9img2.png" alt="" />
+			<div class="timer">
+				<h3>Mini-course<br><span>«5 Secrets of Effective<br>Promotional Activities»</span></h3>
+				<div class="container">
+					<div class="flip day1Play"></div><div class="flip dayPlay"></div>
+					<div class="flip hour2Play"></div><div class="flip hourPlay"></div>
+					<div class="flip minute6Play"></div><div class="flip minutePlay"></div>
+					<div class="flip second6Play"></div><div class="flip secondPlay"></div>
+				</div>
+			</div>
+			<div class="form-wrap">
+				<img src="./img/form-wrap.png" alt="" />
+				<h1>request</h1>
+				<h3>an estimate on a test order</h3>
+				<p>Our manager will call you back<br>within one hour</p>
+				<form action="" method="POST">
+					<input type='hidden' name='csrfmiddlewaretoken' value='Na51hWExBLn3nU9sqZVZzpsbjVkhO7rg' />
+					
+					<input id="id_last_name" name="last_name" type="hidden" />
+					
+					<input id="id_form_name" name="form_name" type="hidden" />
+					
+					<div class="icon name">
+						<input id="id_name" maxlength="200" name="name" type="text" data-placeholder="name"/>
+					</div>
+					<div class="icon mail">
+						<input id="id_email" maxlength="200" name="email" type="text" data-placeholder="e-mail"/>
+					</div>
+					<div class="icon phone">
+						<input id="id_phone" maxlength="20" name="phone" type="text" data-placeholder="phone"/>
+					</div>
+					<div class="clearfix"></div>
+					<input type="submit" value="Send request" />
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<div class="c15">
+		<div class="wrap">
+			<h1>Have  <span>questions?</span></h1>
+			<a class="quest" href="#">ask manager</a>
+		</div>
+	</div>
+	
+	<footer>
+		<div class="wrap">
+			<div class="call">
+				<div class="number">+38 (044) 580-88-00</div>
+				<a href="#">Request a phone call</a>
+			</div>
+			
+			<div class="vendor">
+				 <span>SITE DEVELOPMENT:</span> 
+				<a href="http://lp4lp.ru/"><img src="./img/mokselle.png"/></a>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</footer>
+
+
+	<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter21824392 = new Ya.Metrika({id:21824392,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    trackHash:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/21824392" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter21850519 = new Ya.Metrika({id:21850519,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    trackHash:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/21850519" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter21863731 = new Ya.Metrika({id:21863731,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    trackHash:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/21863731" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<script>
+	$('form').submit(function() {
+		yaCounter21824392.reachGoal($(this).attr('data-yandex-target'));
+		yaCounter21850519.reachGoal($(this).attr('data-yandex-target'));
+		yaCounter21863731.reachGoal($(this).attr('data-yandex-target'));
+	});
+</script>
+
+</body>
+</html>
